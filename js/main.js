@@ -51,6 +51,15 @@ function isValidEmail(input) {
   }
 }
 
+// Check password match
+function isPasswordMatch(input, match) {
+  if (input.value !== match.value) {
+    showError(match, 'Passwords do not match');
+  } else {
+    showSuccess(match);
+  }
+}
+
 //  Event listeners
 form.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -59,4 +68,5 @@ form.addEventListener('submit', function (e) {
   checkLength(username, 3, 37);
   checkLength(password, 8, 37);
   isValidEmail(email);
+  isPasswordMatch(password, password2);
 });
