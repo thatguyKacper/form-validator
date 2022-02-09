@@ -1,0 +1,13 @@
+{
+  "name": "form-validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "Kacper Wójtowicz",
+  "license": "ISC",
+  "homepage": "https://github.com/thatguyKacper/form-validator#readme"
+}
